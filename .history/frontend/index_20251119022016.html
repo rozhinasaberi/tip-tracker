@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TipTracker Frontend (MVP)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>TipTracker</h1>
+    <p class="subtitle"></p>
+  </header>
+
+  <main>
+    <section id="auth-section">
+      
+
+      <div class="card">
+        <h3>Register</h3>
+        <form id="register-form">
+          <label>
+            Name
+            <input type="text" id="register-name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" id="register-email" required />
+          </label>
+          <label>
+            Password
+            <input type="password" id="register-password" required />
+          </label>
+          <label>
+            Hourly wage (optional)
+            <input type="number" id="register-hourlyWage" step="0.01" />
+          </label>
+          <button type="submit">Register</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3>Login</h3>
+        <form id="login-form">
+          <label>
+            Email
+            <input type="email" id="login-email" required />
+          </label>
+          <label>
+            Password
+            <input type="password" id="login-password" required />
+          </label>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+
+     
+
+    <section id="tips-section" class="hidden">
+      <h2>Your Tips</h2>
+
+      <div class="card">
+        <h3>Create Tip Entry</h3>
+        <form id="create-tip-form">
+          <label>
+            Date
+            <input type="date" id="tip-date" required />
+          </label>
+          <label>
+            Shift type
+            <select id="tip-shiftType">
+              <option value="Lunch">Lunch</option>
+              <option value="Dinner">Dinner</option>
+              <option value="Double">Double</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+          <label>
+            Hours worked
+            <input type="number" id="tip-hoursWorked" step="0.1" required />
+          </label>
+          <label>
+            Tips amount
+            <input type="number" id="tip-amount" step="0.01" required />
+          </label>
+          <label>
+            Notes
+            <textarea id="tip-notes" rows="2"></textarea>
+          </label>
+          <button type="submit">Create Tip</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3>Tip Entries</h3>
+        <button id="refresh-tips-btn" type="button">Refresh Tips</button>
+        <div id="tips-list"></div>
+      </div>
+    </section>
+
+   
+
+  <script src="app.js"></script>
+</body>
+</html>
