@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 1.5rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.3rem;
+}
+
+.subtitle {
+  margin-top: 0.3rem;
+  color: #9ca3af;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+}
+
+section {
+  width: 100%;
+}
+
+#auth-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+#tips-section.hidden {
+  display: none;
+}
+
+.card {
+  background: #020617;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid #1f2937;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.5);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.45rem 0.55rem;
+  border-radius: 0.5rem;
+  border: 1px solid #374151;
+  background: #020617;
+  color: #e5e7eb;
+  margin-top: 0.25rem;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #f97316;
+  box-shadow: 0 0 0 1px rgba(249, 115, 22, 0.35);
+}
+
+button {
+  background: #f97316;
+  border: none;
+  border-radius: 999px;
+  color: #111827;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+button:hover {
+  background: #fb923c;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+#token-display {
+  width: 100%;
+  background: #020617;
+  border-radius: 0.5rem;
+  border: 1px dashed #4b5563;
+  color: #fbbf24;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 0.75rem;
+}
+
+#tips-list {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tip-item {
+  border-radius: 0.6rem;
+  border: 1px solid #374151;
+  padding: 0.6rem 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.tip-main {
+  font-size: 0.88rem;
+}
+
+.tip-meta {
+  color: #9ca3af;
+  font-size: 0.8rem;
+}
+
+.tip-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.tip-actions button {
+  padding: 0.25rem 0.7rem;
+  font-size: 0.75rem;
+}
+
+.tip-actions .delete {
+  background: #dc2626;
+  color: #f9fafb;
+}
+
+.tip-actions .delete:hover {
+  background: #ef4444;
+}
+
+#debug-log {
+  max-height: 200px;
+  overflow-y: auto;
+  background: #020617;
+  border-radius: 0.5rem;
+  border: 1px solid #374151;
+  padding: 0.75rem;
+  font-size: 0.8rem;
+}
+/* NAVBAR */
+nav {
+  background: #020617;
+  border-bottom: 1px solid #1f2937;
+  padding: 0.7rem 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #f97316;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #f97316;
+}
+
+.active {
+  color: #f97316 !important;
+}
+
+.nav-user {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}

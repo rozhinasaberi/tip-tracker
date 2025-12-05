@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Edit Tip • TipTracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav id="navbar"></nav>
+
+  <main>
+    <section class="card">
+      <h2>Edit Tip Entry</h2>
+
+      <form id="edit-tip-form">
+        <label>Date <input type="date" id="edit-tip-date" required /></label>
+        <label>Restaurant <input type="text" id="edit-tip-restaurant" required /></label>
+        <label>Hours Worked <input type="number" id="edit-tip-hours" required /></label>
+        <label>Tips Amount <input type="number" id="edit-tip-amount" required /></label>
+        <label>Notes <textarea id="edit-tip-notes"></textarea></label>
+
+        <button type="submit">Save Changes</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

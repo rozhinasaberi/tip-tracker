@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TipTracker • Register</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav id="navbar"></nav>
+
+  <main>
+    <section class="card">
+      <h2>Create Account</h2>
+
+      <form id="register-form">
+        <label>Name <input type="text" id="register-name" required /></label>
+        <label>Email <input type="email" id="register-email" required /></label>
+        <label>Password <input type="password" id="register-password" required /></label>
+        <label>Hourly Wage (optional)
+          <input type="number" id="register-hourlyWage" step="0.01" />
+        </label>
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

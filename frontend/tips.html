@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Tips • TipTracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav id="navbar"></nav>
+
+  <main>
+    <section class="card">
+      <h2>My Tips</h2>
+
+      <form id="create-tip-form">
+        <label>Date <input type="date" id="tip-date" required /></label>
+        <label>Restaurant <input type="text" id="tip-restaurant" required /></label>
+        <label>Hours Worked <input type="number" id="tip-hoursWorked" step="0.1" required /></label>
+        <label>Tip Amount <input type="number" id="tip-amount" step="0.01" required /></label>
+        <label>Notes <input type="text" id="tip-notes" /></label>
+
+        <button type="submit">Add Tip</button>
+      </form>
+
+      <button id="refresh-tips-btn" onclick="refreshTips()">Refresh Tips</button>
+
+      <div id="tips-list"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

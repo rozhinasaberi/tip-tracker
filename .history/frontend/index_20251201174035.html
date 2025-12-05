@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TipTracker • Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav id="navbar"></nav>
+
+  <main>
+    <!-- Logged OUT should be visible by default -->
+    <section id="home-logged-out" class="card">
+      <h1>💸 TipTracker</h1>
+      <p>Your personal daily income tracker.</p>
+      <div class="home-buttons">
+        <a href="./login.html" class="btn">Login</a>
+        <a href="./register.html" class="btn-secondary">Register</a>
+      </div>
+    </section>
+
+    <!-- Logged IN stays hidden until app.js shows it -->
+    <section id="home-logged-in" class="card hidden">
+      <h2>Dashboard</h2>
+
+      <div class="stats-container">
+        <div class="stat"> 
+          <h3>Total Tips</h3>
+          <p id="stat-total-tips">$0</p>
+        </div>
+
+        <div class="stat"> 
+          <h3>Total Hours</h3>
+          <p id="stat-total-hours">0 hrs</p>
+        </div>
+
+        <div class="stat"> 
+          <h3>Entries</h3>
+          <p id="stat-total-entries">0</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
