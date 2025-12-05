@@ -2,8 +2,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: #ffffff;         
-  color: #f1eeee;             
+  background: #121212;
+  color: #f5f5f5;
   font-family: "Inter", Arial, sans-serif;
 }
 
@@ -20,7 +20,7 @@ main {
 
 #navbar {
   width: 100%;
-  background: #1f1f1f;       
+  background: #1f1f1f;
   border-bottom: 2px solid #ff8800;
   padding: 14px 0;
   margin-bottom: 30px;
@@ -34,6 +34,7 @@ main {
   align-items: center;
   justify-content: space-between;
 }
+
 
 .nav-logo {
   display: flex;
@@ -83,11 +84,11 @@ main {
 
 
 .card {
-  background: #ffffff;          
+  background: #1e1e1e;
   border-radius: 12px;
   padding: 25px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08); 
-  border: 1px solid rgba(0, 0, 0, 0.08);   
+  box-shadow: 0 0 15px rgba(255, 136, 0, 0.2);
+  border: 1px solid rgba(255, 136, 0, 0.25);
 }
 
 .card h2 {
@@ -95,7 +96,7 @@ main {
   margin-bottom: 15px;
 }
 
-
+/* BUTTONS*/
 .btn,
 button {
   display: inline-block;
@@ -138,12 +139,11 @@ button:hover {
   background: #ff3333;
 }
 
-
+/*FORMS*/
 form label {
   display: block;
   margin-bottom: 15px;
   font-size: 0.95rem;
-  color: #222;                  
 }
 
 input,
@@ -151,10 +151,10 @@ textarea {
   width: 100%;
   padding: 10px;
   border-radius: 6px;
-  border: 1px solid #cccccc;    
+  border: none;
   margin-top: 5px;
-  background: #ffffff;          
-  color: #222222;              
+  background: #2c2c2c;
+  color: #fff;
 }
 
 textarea {
@@ -175,7 +175,6 @@ textarea {
   gap: 20px;
 }
 
-/* === STATS === */
 .stats-container {
   display: flex;
   justify-content: space-between;
@@ -184,8 +183,8 @@ textarea {
 }
 
 .stat {
-  background: #ffffff;         
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #292929;
+  border: 1px solid rgba(255, 136, 0, 0.3);
   border-radius: 12px;
   padding: 20px;
   width: 32%;
@@ -201,15 +200,14 @@ textarea {
 .stat p {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #222;
 }
 
 
 .tip-item {
-  background: #ffffff;        
+  background: #252525;
   padding: 15px;
   border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 136, 0, 0.25);
   margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
@@ -218,15 +216,14 @@ textarea {
 
 .tip-main {
   font-size: 0.95rem;
-  color: #222;
 }
 
 .tip-meta {
-  color: #666666;              
+  color: #bbbbbb;
   font-size: 0.85rem;
 }
 
-/* === PROFILE === */
+
 #profile-info p {
   margin: 10px 0;
 }
@@ -239,25 +236,24 @@ textarea {
 
 #edit-tip-form input,
 #edit-tip-form textarea {
-  background: #ffffff;        
-  border: 1px solid #cccccc;    
+  background: #2d2d2d;
+  border: 1px solid rgba(255, 136, 0, 0.3);
 }
-
 
 .hero {
   text-align: center;
   padding: 40px 0;
-  background: #f6f6f6;         
+  background: #222;
   border-bottom: 2px solid #f4a000;
 }
 
 .hero-logo {
-  width: 20px;
+  width: 9px;
   margin-bottom: 10px;
 }
 
 .hero h1 {
-  color: #333333;             
+  color: #ddd;
   font-size: 2.5rem;
   letter-spacing: 1px;
   font-weight: 700;
