@@ -1,105 +1,145 @@
-TipTracker – Sprint 1 (MVP Release)
+✨ TipTracker – Full-Stack Web Application
 
-A simple web application that allows restaurant servers to track their daily tips, hours worked, and shift details.
-This is the first release, focusing on backend functionality, full CRUD APIs, authentication, and a minimal working frontend.
+TipTracker is a full-stack web application designed for restaurant servers to track their daily tips, hours worked, income summaries, and personal profile information.
+This project is built using Node.js, Express, MongoDB, and Vanilla JavaScript with a clean, responsive frontend UI.
 
-🚀 Features (Sprint 1)
+🚀 Features
+🔐 Authentication
 
-User Registration
+User registration
 
-User Login (JWT Authentication)
+Login (plain-text passwords for MVP)
 
-Protected API Routes
+JWT-based authentication
 
-Create Tip Entry
+Logout
 
-Read Tip Entries
+Secure user data stored in MongoDB
 
-Delete Tip Entry
+👤 User Profile Management
 
-Update Tip Entry (available via API)
+View profile
 
-Connected MongoDB database
+Update hourly wage
 
-Simple HTML/JS frontend to interact with the backend
+Edit name/email
 
-🧰 Tech Stack
+Change password (optional)
 
-Node.js + Express.js (Backend)
+Delete account
 
-MongoDB + Mongoose (Database)
+💸 Tip Tracking
 
-JWT (JSON Web Tokens) for authentication
+Add new tip entries
 
-HTML + CSS + JavaScript (Frontend)
+View all tips
 
-Postman for API testing
+Edit tip entries
 
-📂 Project Structure
+Delete tip entries
+
+Daily + monthly totals
+
+Automatic dashboard statistics
+
+📊 Dashboard Summary
+
+Total tips earned
+
+Total hours worked
+
+Number of shifts
+
+Auto-refresh button
+
+🗂️ Tools & Technologies
+
+Frontend: HTML, CSS, JavaScript
+
+Backend: Node.js, Express
+
+Database: MongoDB (local instance)
+
+Authentication: JWT
+
+Version Control: Git + GitHub
+
+Agile Tooling: Jira/Trello (Product Backlog, Task Board)
+
+📁 Project Structure
 tip-tracker/
 │
 ├── backend/
 │   ├── controllers/
+│   ├── middleware/
 │   ├── models/
 │   ├── routes/
-│   ├── middleware/
-│   └── server.js
+│   ├── server.js
+│   └── .env
 │
 ├── frontend/
 │   ├── index.html
-│   ├── styles.css
-│   └── app.js
+│   ├── login.html
+│   ├── register.html
+│   ├── tips.html
+│   ├── edit-tip.html
+│   ├── profile.html
+│   ├── edit-profile.html
+│   ├── app.js
+│   └── styles.css
 │
-└── README.md
+├── README.md
+└── package.json
 
-🛢 API Endpoints
-Authentication
-Method	Route	Description
-POST	/api/auth/register	Register a new user
-POST	/api/auth/login	Login + receive JWT
-Tips (Protected)
-Method	Route	Description
-POST	/api/tips	Create a tip entry
-GET	/api/tips	Get all tip entries for logged-in user
-PUT	/api/tips/:id	Update a tip entry
-DELETE	/api/tips/:id	Delete a tip entry
+⚙️ Installation & Setup
+1. Clone the Repository
+git clone git@github.com:rozhinasaberi/tip-tracker.git
+cd tip-tracker
 
-Authorization required:
-
-Authorization: Bearer <token>
-
-▶️ How to Run
-1. Start backend
+2. Install Backend Dependencies
 cd backend
 npm install
-npm run dev
 
-2. Open frontend
+3. Configure Environment Variables
 
-Open frontend/index.html in your browser (or use Live Server).
+Create a .env file inside /backend:
 
-🧪 Testing
+PORT=4000
+MONGODB_URI=mongodb://127.0.0.1:27017/tip-tracker
+JWT_SECRET=supersecretjwttiptracker
 
-All APIs were tested using Postman for:
+4. Start Backend Server
+node server.js
 
-Register
 
-Login
+Backend runs at:
+👉 http://localhost:4000
 
-Create Tip
+5. Start Frontend
 
-Get Tips
+From /frontend:
 
-Update Tip
+python3 -m http.server 5600
 
-Delete Tip
 
-Unauthorized access (missing token)
+Frontend runs at:
+👉 http://localhost:5600
 
-📌 Notes
+🧪 Testing the Application
 
-Passwords are stored as plain text for MVP demo purposes.
+✔ Register a new account
+✔ Log in
+✔ Add a tip
+✔ Edit/Delete tip
+✔ Edit profile
+✔ Update hourly wage
+✔ Delete account
+✔ Dashboard statistics auto-update
 
-Frontend is intentionally simple for Sprint 1 (functionality over styling).
 
-Update functionality is implemented in backend; UI update will be added in Sprint 2.
+
+👩‍💻 Contributors
+
+Rojina Saberi	Full-Stack Developer, UI Designer, GitHub Maintainer
+
+This project is for academic use and coursework submission.
