@@ -18,6 +18,10 @@ function loadNavbar() {
 
   nav.innerHTML = `
     <div class="nav-container">
+      <<a href="./index.html" class="nav-logo">
+      <img src="./images/logo.png" alt="TipTracker Logo" class="logo-img">
+      TipTracker
+    </a>
     
       <div class="nav-links">
 

@@ -240,21 +240,3 @@ textarea {
   border: 1px solid rgba(255, 136, 0, 0.3);
 }
 
-.hero {
-  text-align: center;
-  padding: 40px 0;
-  background: #222;
-  border-bottom: 2px solid #f4a000;
-}
-
-.hero-logo {
-  width: 90px;
-  margin-bottom: 10px;
-}
-
-.hero h1 {
-  color: #ddd;
-  font-size: 2.5rem;
-  letter-spacing: 1px;
-  font-weight: 700;
-}

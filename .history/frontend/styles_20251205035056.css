@@ -35,21 +35,22 @@ main {
   justify-content: space-between;
 }
 
-
+/* LOGO AREA */
 .nav-logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-size: 1.3rem;
-  color: #f4a000;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: 700;
+  color: #ffffff;
 }
 
+/* THE IMAGE LOGO */
 .logo-img {
-  height: 30px;
-  width: 30px;
-  margin-right: 10px;
-  border-radius: 6px;
+  height: 36px;          /* change to 40–48px if you want bigger */
+  margin-right: 8px;
+  border-radius: 6px;    /* remove if your logo is already shaped */
+  object-fit: cover;
 }
 
 .nav-links {
@@ -240,21 +241,3 @@ textarea {
   border: 1px solid rgba(255, 136, 0, 0.3);
 }
 
-.hero {
-  text-align: center;
-  padding: 40px 0;
-  background: #222;
-  border-bottom: 2px solid #f4a000;
-}
-
-.hero-logo {
-  width: 90px;
-  margin-bottom: 10px;
-}
-
-.hero h1 {
-  color: #ddd;
-  font-size: 2.5rem;
-  letter-spacing: 1px;
-  font-weight: 700;
-}

@@ -18,6 +18,7 @@ function loadNavbar() {
 
   nav.innerHTML = `
     <div class="nav-container">
+      
     
       <div class="nav-links">
 

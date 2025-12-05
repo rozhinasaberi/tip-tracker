@@ -35,21 +35,11 @@ main {
   justify-content: space-between;
 }
 
-
 .nav-logo {
-  display: flex;
-  align-items: center;
-  font-size: 1.3rem;
-  color: #f4a000;
+  color: #ff8800;
+  font-size: 1.4rem;
+  font-weight: bold;
   text-decoration: none;
-  font-weight: 700;
-}
-
-.logo-img {
-  height: 30px;
-  width: 30px;
-  margin-right: 10px;
-  border-radius: 6px;
 }
 
 .nav-links {
@@ -82,7 +72,11 @@ main {
   opacity: 0.8;
 }
 
-
+.logo-img {
+  height: 5px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
 .card {
   background: #1e1e1e;
   border-radius: 12px;
@@ -238,23 +232,4 @@ textarea {
 #edit-tip-form textarea {
   background: #2d2d2d;
   border: 1px solid rgba(255, 136, 0, 0.3);
-}
-
-.hero {
-  text-align: center;
-  padding: 40px 0;
-  background: #222;
-  border-bottom: 2px solid #f4a000;
-}
-
-.hero-logo {
-  width: 90px;
-  margin-bottom: 10px;
-}
-
-.hero h1 {
-  color: #ddd;
-  font-size: 2.5rem;
-  letter-spacing: 1px;
-  font-weight: 700;
 }
