@@ -8,16 +8,8 @@ dotenv.config();
 
 const app = express();
 
-// ✅ CORS (safe for Render + frontend)
-app.use(
-  cors({
-    origin: "*",
-    methods: "GET,POST,PUT,DELETE",
-    allowedHeaders: "Content-Type,Authorization",
-  })
-);
-
-// ✅ Body parser
+// ✅ Middleware
+app.use(cors());
 app.use(express.json());
 
 // ✅ Connect MongoDB
@@ -30,20 +22,14 @@ const tipRoutes = require("./routes/tipRoutes");
 app.use("/api/auth", authRoutes);
 app.use("/api/tips", tipRoutes);
 
-// ✅ Health check (important)
+// ✅ Health check
 app.get("/", (req, res) => {
-  res.send("✅ Backend is running");
+  res.send("✅ Backend running on Render");
 });
 
-// ✅ PORT — MUST come from Render
+// ✅ Render PORT (MANDATORY)
 const PORT = process.env.PORT;
 
-if (!PORT) {
-  console.error("❌ PORT environment variable not set");
-  process.exit(1);
-}
-
-// ✅ Start server (Render-compatible)
 app.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);
 });
