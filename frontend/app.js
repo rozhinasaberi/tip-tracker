@@ -1,6 +1,6 @@
 console.log("✅ app.js LOADED");
 
-const API_BASE = "https://tip-tracker.onrender.com";
+const API_BASE = "https://tip-tracker.onrender.com/api";
 
 
 
