@@ -1,145 +1,76 @@
-✨ TipTracker – Full-Stack Web Application
+# TipTracker
 
-TipTracker is a full-stack web application designed for restaurant servers to track their daily tips, hours worked, income summaries, and personal profile information.
-This project is built using Node.js, Express, MongoDB, and Vanilla JavaScript with a clean, responsive frontend UI.
+A full-stack web application that helps restaurant servers track daily tips, hours worked, shift totals, and income summaries.
 
-🚀 Features
-🔐 Authentication
+## What This Project Is About
 
-User registration
+TipTracker was built to make it easier for servers to log tip entries, monitor earnings, and manage their profile information in one place. The project combines user authentication, CRUD operations, and dashboard-style summaries in a multi-page web app.
 
-Login (plain-text passwords for MVP)
+This is a **full-stack CRUD web application**.
 
-JWT-based authentication
+## Key Features
 
-Logout
+- user registration and login
+- JWT-based authentication
+- create, view, edit, and delete tip entries
+- dashboard totals for tips, hours, and shifts
+- profile editing and hourly wage updates
+- account deletion
 
-Secure user data stored in MongoDB
+## Tech Stack
 
-👤 User Profile Management
+- Node.js
+- Express
+- MongoDB
+- HTML
+- CSS
+- Vanilla JavaScript
+- JWT authentication
 
-View profile
+## Project Structure
 
-Update hourly wage
+- `backend/` - Express API, models, routes, middleware, controllers
+- `frontend/` - static multi-page frontend
+- `package.json` - project dependencies
 
-Edit name/email
+## Important Note
 
-Change password (optional)
+The repository description on GitHub previously mentioned React, but the actual frontend in this repo is **Vanilla JavaScript**, not React.
 
-Delete account
+## Run Locally
 
-💸 Tip Tracking
+1. Install backend dependencies:
 
-Add new tip entries
-
-View all tips
-
-Edit tip entries
-
-Delete tip entries
-
-Daily + monthly totals
-
-Automatic dashboard statistics
-
-📊 Dashboard Summary
-
-Total tips earned
-
-Total hours worked
-
-Number of shifts
-
-Auto-refresh button
-
-🗂️ Tools & Technologies
-
-Frontend: HTML, CSS, JavaScript
-
-Backend: Node.js, Express
-
-Database: MongoDB (local instance)
-
-Authentication: JWT
-
-Version Control: Git + GitHub
-
-Agile Tooling: Jira/Trello (Product Backlog, Task Board)
-
-📁 Project Structure
-tip-tracker/
-│
-├── backend/
-│   ├── controllers/
-│   ├── middleware/
-│   ├── models/
-│   ├── routes/
-│   ├── server.js
-│   └── .env
-│
-├── frontend/
-│   ├── index.html
-│   ├── login.html
-│   ├── register.html
-│   ├── tips.html
-│   ├── edit-tip.html
-│   ├── profile.html
-│   ├── edit-profile.html
-│   ├── app.js
-│   └── styles.css
-│
-├── README.md
-└── package.json
-
-⚙️ Installation & Setup
-1. Clone the Repository
-git clone git@github.com:rozhinasaberi/tip-tracker.git
-cd tip-tracker
-
-2. Install Backend Dependencies
+```bash
 cd backend
 npm install
+```
 
-3. Configure Environment Variables
+2. Create a `.env` file in `backend/` with values similar to:
 
-Create a .env file inside /backend:
-
+```env
 PORT=4000
 MONGODB_URI=mongodb://127.0.0.1:27017/tip-tracker
-JWT_SECRET=supersecretjwttiptracker
+JWT_SECRET=your_jwt_secret
+```
 
-4. Start Backend Server
+3. Start the backend:
+
+```bash
 node server.js
+```
 
+4. Start the frontend from `frontend/`:
 
-Backend runs at:
-👉 http://localhost:4000
-
-5. Start Frontend
-
-From /frontend:
-
+```bash
 python3 -m http.server 5600
+```
 
+Then open:
 
-Frontend runs at:
-👉 http://localhost:5600
+- backend: `http://localhost:4000`
+- frontend: `http://localhost:5600`
 
-🧪 Testing the Application
+## Author
 
-✔ Register a new account
-✔ Log in
-✔ Add a tip
-✔ Edit/Delete tip
-✔ Edit profile
-✔ Update hourly wage
-✔ Delete account
-✔ Dashboard statistics auto-update
-
-
-
-👩‍💻 Contributors
-
-Rojina Saberi	Full-Stack Developer, UI Designer, GitHub Maintainer
-
-This project is for academic use and coursework submission.
+- Rojina Saberi
